@@ -19,11 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-<<<<<<< HEAD
     origin: ["http://localhost:3000", "https://prolista.vercel.app"],
-=======
-    origin: ["http://localhost:3000","https://pro-lista-uesleimf.vercel.app/"],
->>>>>>> fdae2868abe9d86c7e57690c2f351cc4b6cdedf8
     credentials: true,
   })
 );

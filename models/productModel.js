@@ -14,10 +14,9 @@ const productSchema = mongoose.Schema(
     },
     sku: {
       type: String,
-      required: [true, "SKU could not be generated"],
+      required: true,
       default: "SKU",
       trim: true,
-      //   unique: true,
     },
     category: {
       type: String,
@@ -25,18 +24,19 @@ const productSchema = mongoose.Schema(
       trim: true,
     },
     quantity: {
-      type: Number,
+      type: String,
       required: [true, "Please add a quantity"],
       trim: true,
     },
     price: {
-      type: Number,
-      required: [true, "Please add a quantity"],
+      type: String,
+      required: [true, "Please add a price"],
       trim: true,
     },
     description: {
       type: String,
       required: [true, "Please add a description"],
+      trim: true,
     },
     image: {
       type: Object,

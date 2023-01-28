@@ -6,9 +6,17 @@ const tokenSchema = mongoose.Schema({
     required: true,
     ref: "user",
   },
-  token: {
+  vToken: {
     type: String,
-    required: true,
+    default: "",
+  },
+  rToken: {
+    type: String,
+    default: "",
+  },
+  lToken: {
+    type: String,
+    default: "",
   },
   createdAt: {
     type: Date,
